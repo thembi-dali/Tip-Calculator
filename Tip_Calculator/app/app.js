@@ -1,10 +1,10 @@
 // Calculator tip
-funtion calculateTip() {
-    const billAmt = 
-document.getElementbyId("billamt").value;
-    const serviceQual = 
+function calculateTip() {
+    var billAmt = 
+document.getElementById("billamt").value;
+    var serviceQual = 
 document.getElementById("serviceQual").value;
-    const numOfPeople = 
+    var numOfPeople = 
 document.getElementById("peopleamt").value;
 
 // Validate input
@@ -26,7 +26,7 @@ document.getElementById("each").style.display
 }
 
 // Calculate tip
-const total = (billAmt * serviceQual) / numOfPeople;
+var total = (billAmt * serviceQual) / numOfPeople;
 // Round to two decimal places
 total = Math.round(total * 100) / 100;
 // Next line allows us to always have two digits after decimal point
